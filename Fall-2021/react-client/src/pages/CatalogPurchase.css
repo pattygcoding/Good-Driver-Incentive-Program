@@ -1,0 +1,17 @@
+.OrderConfirm {
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.OrderConfirmNum { 
+    text-align: left;  
+    width: 500px;
+    background-color: rgb(235, 235, 235);
+    
+}
+
+.PriceAddons {
+    text-align: left;
+}

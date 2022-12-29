@@ -1,0 +1,92 @@
+.CatalogItem-Body {
+    z-index: 3;
+    border: 1px solid black;
+    background-color: white;
+    padding: 20px;
+    margin: 30px;
+    width: 35%;
+    height: 350px;
+    display: flex;
+}
+
+@media (max-width: 780px) {
+    .CatalogItem-Body {
+        width: 80%;
+        height: fit-content;
+    }
+}
+
+@media (max-width: 600px) {
+    .CatalogItem-Body {
+        width: 70%;
+    }
+}
+
+.CatalogItem-Text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.CatalogItem-Info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.CatalogItem-Name {
+    font-size: 20px; 
+}
+
+.CatalogItem-Img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.CatalogItem-ImgSide{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.CatalogItem-ImgContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+}
+
+.CatalogItem-Arrow{
+    font-size: 30px;
+    margin: 5px;
+}
+
+.CatalogItem-Arrow:hover{
+    font-size: 32px;
+    margin: 5px;
+}
+
+.CatalogItem-Button{
+    align-self: center;
+    font-size: 18px;
+    border-radius: 8px;
+    width: 75%;
+    margin-bottom: 10px;
+    border: 2px solid lightgray;
+}
+
+.CatalogItem-Button:hover{
+    border: 2px solid gray;
+}
+
+.CatalogItem-Button:active{
+    border: 3px solid gray;
+}
+
+.Msg{
+    color: blue;
+}

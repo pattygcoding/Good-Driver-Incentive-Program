@@ -1,0 +1,63 @@
+/* .UpdateOrg-Page {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+} */
+
+.UpdateOrg-Body {
+    z-index: 3;
+    border: 1px solid black;
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+
+.UpdateOrg-Form{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+}
+
+.inputs {
+    line-height: 25px;
+}
+
+.UpdateOrg-Button {
+    border-radius: 8px;
+    height: 25px;
+    width: 100%;
+    border: 2px solid lightgray;
+    margin-top: 20px;
+}
+
+.UpdateOrg-Button:hover {
+    border: 2px solid gray;
+}
+
+.UpdateOrg-Button:active {
+    border: 2px solid darkgray;
+}
+
+.saveChanges {
+    border-radius: 8px;
+    width: 30%;
+    height: 25px;
+    border: 2px solid lightgray;
+    float: right;
+}
+
+.saveChanges:hover {
+    border: 2px solid gray;
+}
+
+.saveChanges:active {
+    border: 2px solid darkgray;
+}

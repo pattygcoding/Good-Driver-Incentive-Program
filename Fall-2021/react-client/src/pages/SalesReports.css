@@ -1,0 +1,24 @@
+.SalesReportButton {
+
+
+    border-radius: 8px;
+    width: 100%;
+    height: 25px;
+    border: 2px solid lightgray;
+    
+}
+
+.SalesReportButton:hover {
+    border: 2px solid darkgray;
+}
+
+.SalesButtonBox {
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+    height: 75px;
+
+}
