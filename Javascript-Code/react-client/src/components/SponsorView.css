@@ -1,0 +1,30 @@
+.SponsorView-Body {
+    z-index: 3;
+    border: 1px solid black;
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.SponsorView-heading {
+    font-size: 20px;
+}
+
+.SponsorView-Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.SponsorView-FormContent {
+    display: flex;
+}

@@ -1,0 +1,18 @@
+
+.Driver-Footer {
+    background-color: #e5e8f0;
+    height: 100px;
+    padding: 0px 5px 0px 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.Driver-Footer img {
+    float: left;
+}
+
+.getHelp {
+    text-align: center;
+}

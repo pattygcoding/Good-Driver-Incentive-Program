@@ -1,0 +1,59 @@
+.DriverOrgs-Body {
+    z-index: 3;
+    border: 1px solid black;
+    background-color: white;
+    padding: 20px;
+    margin-top: 50px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 780px) {
+    .DriverOrgs-Body {
+        width: 80%;
+        flex-wrap: wrap;
+        padding: 10px;
+        height: fit-content;
+    }
+}
+
+.DriverOrgs-heading {
+    font-size: 20px;
+}
+
+.DriverOrgs-Org {
+    border: 1px solid black;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    margin-bottom: 10px;
+    width: 60%;
+    justify-content: space-between;
+    height: 25px;
+    align-items: center;
+}
+
+@media (max-width: 780px) {
+    .DriverOrgs-Org {
+        width: 80%;
+        flex-wrap: wrap;
+        padding: 10px;
+        height: fit-content;
+    }
+}
+
+
+
+.DriverOrgs-Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.DriverOrgs-FormContent {
+    display: flex;
+}

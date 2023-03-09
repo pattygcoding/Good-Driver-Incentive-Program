@@ -1,0 +1,31 @@
+.SignupPage {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Signup-Header {
+    background-color: #e5e8f0;
+}
+.Signup-Box {
+    text-align: left;
+    outline: solid lightgray 1px;
+    width: fit-content;
+    margin: auto;
+    line-height: 0.5;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.login_displaybox {
+    padding-bottom: 0px;
+    color: rgb(235, 31, 31);
+}
+.Seperate-SI-UN {
+    display: block;
+    margin-bottom: 3em;
+}
+.LoginButton {
+    float: right;
+    border-radius: 8px;
+    width: 25%;
+    height: 25px;
+    border: 2px solid lightgray;
+}

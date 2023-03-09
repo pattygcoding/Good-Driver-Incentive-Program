@@ -1,0 +1,49 @@
+.UpdateAccount-Page {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.UpdateAccount-Success{
+    padding-bottom:0px;
+}
+
+.UpdateAccount-Error{
+    padding-bottom:0px;
+    color: rgb(235, 31, 31);
+}
+
+.UpdateAccount-Body {
+    z-index: 3;
+    border: 1px solid black;
+    background-color: white;
+    padding: 20px;
+    /* position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%); */
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+
+.inputs {
+    line-height: 25px;
+}
+
+.saveChanges {
+    border-radius: 8px;
+    width: 30%;
+    height: 25px;
+    border: 2px solid lightgray;
+    float: right;
+}
+
+.saveChanges:hover {
+    border: 2px solid gray;
+}
+
+.saveChanges:active {
+    border: 2px solid darkgray;
+}

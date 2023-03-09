@@ -1,0 +1,38 @@
+.SponsorCatalog-Body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.SponsorCatalog-Top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.SponsorCatalog-Items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.SponsorCatalog-Add{
+    align-self: center;
+    font-size: 22px;
+    border-radius: 8px;
+    height: 60px;
+    width: 150px;
+    margin-bottom: 10px;
+    border: 2px solid lightgray;
+}
+
+.SponsorCatalog-Add:hover{
+    border: 2px solid gray;
+}
+
+.SponsorCatalog-Add:active{
+    border: 3px solid gray;
+}

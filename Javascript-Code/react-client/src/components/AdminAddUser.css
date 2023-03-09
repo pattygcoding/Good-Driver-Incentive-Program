@@ -1,0 +1,31 @@
+.AddUser-Body {
+    z-index: 3;
+    border: 1px solid black;
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.AddUser-heading {
+    font-size: 20px;
+}
+
+.AddUser-FormContent{
+    display: flex;
+    flex-direction: column;
+}
+
+.AddUser-inputs{
+    padding-top: 0px;
+}
+
+.AddUser-Exit {
+    width: 30%;
+    margin-top: 20px;
+}
