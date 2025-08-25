@@ -1,4 +1,5 @@
 const usertype = require("./usertype");
+const crypt = require('../services/encryption.js');
 
 module.exports = function( app, connection ) {
     app.post('/signup-attempt', (req, res) => {

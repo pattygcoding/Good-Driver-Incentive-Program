@@ -5,6 +5,9 @@ const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 var session = require('express-session')
 
+// Load environment variables
+require('dotenv').config();
+
 const PORT = process.env.PORT || 4000;
 
 const app = express();
@@ -18,7 +21,7 @@ app.use(cors());
 
 const oneDay = 1000 * 60 * 60 * 24;
 app.use(session({
-  secret: "secret",
+  secret: process.env.SESSION_SECRET || "secure_default_secret_change_me",
   saveUninitialized:true,
   cookie: {maxAge: oneDay},
   resave: false
@@ -27,14 +30,9 @@ app.use(session({
 const mysql = require('mysql');
 const { response } = require('express');
 const { rmSync } = require('fs');
+const dbConfig = require('./config/database');
 
-var connection = mysql.createConnection({
-  host: "groupfour-database.crvi1tvxyfsa.us-east-1.rds.amazonaws.com",
-  user: "admin",
-  password: "cpsc4910group4",
-  port: "3306",
-  database: "new_schema"
-});
+var connection = mysql.createConnection(dbConfig);
 
 connection.connect(function(err) {
   if(err){

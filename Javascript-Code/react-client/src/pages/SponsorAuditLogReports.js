@@ -4,7 +4,6 @@ import AuditLogResults from '../components/AuditLogResults.js';
 import Layout from '../components/Layout';
 import ExportButton from '../components/ExportButton';
 import ReportsTitle from '../components/ReportsTitle';
-import ReportsFilter from '../components/ReportsFilter';
 import DateRangeFilter from '../components/DateRangeFilter';
 
 const login_columns = [
@@ -222,7 +221,7 @@ class SponsorAuditLogReports extends Component {
     // maybe try changing the sql data types in the database?
 
     render() {
-        if ( this.state.isSponsor & this.state.org != '' ) {
+        if ( this.state.isSponsor & this.state.org !== '' ) {
             if( !this.state.data_fetched ) {
                 return (
                     <Layout userType={1}>
