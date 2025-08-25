@@ -1,3 +1,5 @@
+const crypt = require('../services/encryption.js');
+
 module.exports = function( app, connection ) {
     app.post('/resetpass-attempt', (req, res) => {
 

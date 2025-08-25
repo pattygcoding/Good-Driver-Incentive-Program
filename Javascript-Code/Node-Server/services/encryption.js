@@ -1,16 +1,17 @@
 
-
 /* ---------------- FUNCTIONS TO HASH & VALIDATE PASSWORDS ------------- */
 
 // Credits : https://ciphertrick.com/salt-hash-passwords-using-nodejs-crypto/
 // REQUIRE CRYPTO LIBRARY
 
+// Load environment variables
+require('dotenv').config();
 
 // FUNCTION TO CREATE PASSWORD HASH
 // returns hashed password & corresponding salt value
 function getHash(clear) {
   const CryptoJS = require("crypto-js");
-  var key = "mad_lads_encryption" //this may not be a super safe way to do this but it works
+  var key = process.env.ENCRYPTION_KEY || "default_encryption_key_change_me";
 
   var cipher = CryptoJS.AES.encrypt(clear, key);
   cipher = cipher.toString();
@@ -24,7 +25,7 @@ function getHash(clear) {
 // storedpassword --> hashed password in the database
 function validatePassword(userpass, storedpassword) {
   const CryptoJS = require("crypto-js");
-  var key = "mad_lads_encryption"
+  var key = process.env.ENCRYPTION_KEY || "default_encryption_key_change_me";
 
    decryppass = CryptoJS.AES.decrypt(storedpassword, key);
    decryppass = decryppass.toString(CryptoJS.enc.Utf8);

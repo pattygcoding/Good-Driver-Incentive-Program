@@ -4,7 +4,6 @@ import AuditLogResults from '../components/AuditLogResults.js';
 import Layout from '../components/Layout';
 import ExportButton from '../components/ExportButton';
 import ReportsTitle from '../components/ReportsTitle';
-import ReportsFilter from '../components/ReportsFilter';
 import DriverOnlyFilter from '../components/DriverOnlyFilter';
 
 const columns = [
